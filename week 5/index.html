@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>The priority of selectors</title>
+<style type="text/css">
+    * {font:20px "Comic Sans MS"}
+MycustomizeTag {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    width: 500px;
+}
+div {
+    background-color: yellow;
+    margin: 0px 0px 5px 5px;
+    width: 300px;
+}
+.GroupFormat {
+    font-weight: bold;
+    color: #f00;
+    width: 400px;
+}
+#TheHighestPriority {
+    background-color: #000;
+    font-weight: none;
+    font: italic 30px "Times New Roman";
+    color: #fff;
+}
+</style>
+</head>
+<body>
+    <MyCustomizeTag>Here is customize tag</MyCustomizeTag>
+    <div>The first paragraph.</div>
+    <div class="GroupFormat">The second paragraph.</div>
+    <div class="GroupFormat" id="TheHighestPriority">
+        The third paragraph.
+    </div>
+    <div>The Fourth paragraph.</div>
+    <div class="GroupFormat">The fifth oaragraph.</div>
+    <div class="GroupFormat">The sixth paragraph.</div>
+    <div>The seventh paragraph.</div>
+</body>
+</html>
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Recognize odd and even element</title>
+<style>
+div {width: 400px;}
+div:nth-child(even) {background: #f9f9f9;} 
+div:nth-child(2n+1) {background: #ff9;} 
+</style>
+</head>
+<body>
+    <h1>Aptech Semester 1's Subject</h1>
+    <div>Elementary Programming in C.</div>
+    <div>Explore HTML, DHTML and JavaScript.</div>
+    <div>Designing Web Sites in Dreamweaver.</div>
+    <div>RDBMS and Data Management.</div>
+    <div>Working with SQL Sever Database Objects.</div>
+    <div>Eproject (Dreamweaver).</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Creat product list with CSS3</title>
+<style type="text/css">
+.ProductDetails {display: none;}
+.Product img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+.ProductName {font-weight: bold;}
+.ProductStudentCode {font-style: italic;}
+.ProductName::after {content: "-";}
+.Product {
+    text-align: center;
+    width: 150px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Product:hover .ProductDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="Product">
+        <img src="img/VuThiAnhTho.jpg"/>
+        <div class="ProductDetails">
+            <span class="ProductName">VuThiAnhTho</span>
+            <span class="ProductStudentCode">23070082</span>
+        </div>
+    </div>
+    <div class="Product">
+        <img src="img/TrinhHongLien.jpg"/>
+        <div class="ProductDetails">
+            <span class="ProductName">TrinhHongLien</span>
+            <span class="ProductStudentCode">23070250</span>
+        </div>
+    </div>
+<div class="Product">
+    <img src="img/NguyenThiHienDung.jpg"/>
+    <div class="ProductDetails">
+        <span class="ProductName">NguyenThiHienDung</span>
+        <span class="ProductStudentCode">23070232</span>
+    </div>
+</div>
+</body>
+</html>
