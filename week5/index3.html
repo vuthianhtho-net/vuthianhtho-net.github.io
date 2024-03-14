@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Creat product list with CSS3</title>
+<style type="text/css">
+.StudentDetails {display: none;}
+.Student img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #aaa;
+}
+.StudentName {font-weight: bold;}
+.StudentCode {font-style: italic;}
+.StudentName::after {content: "-";}
+.Student {
+    text-align: center;
+    width: 150px;
+    margin: 0px 20px;
+    float: left;
+    cursor: pointer;
+}
+.Student:hover .StudentDetails {display: block;}
+</style>
+</head>
+<body>
+<div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/474x/3b/aa/61/3baa61b5c4d2d87cf08657f553527c4f.jpg"/>
+        <div class="StudentDetails">
+            <span class="StudentName">VuThiAnhTho</span>
+            <span class="StudentCode">23070082</span>
+        </div>
+    </div>
+    <div class="Student">
+        <img src="https://i.pinimg.com/474x/3b/aa/61/3baa61b5c4d2d87cf08657f553527c4f.jpg"/>
+        <div class="StudentDetails">
+            <span class="StudentName">TrinhHongLien</span>
+            <span class="StudentCode">23070250</span>
+        </div>
+    </div>
+<div class="Student">
+    <img src="https://i.pinimg.com/474x/3b/aa/61/3baa61b5c4d2d87cf08657f553527c4f.jpg"/>
+    <div class="StudentDetails">
+        <span class="StudentName">NguyenThiHienDung</span>
+        <span class="StudentCode">23070232</span>
+    </div>
+</div>
+</body>
+</html>
+
